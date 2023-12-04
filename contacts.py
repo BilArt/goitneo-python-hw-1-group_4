@@ -37,3 +37,11 @@ def show_phone(args, contacts):
             return "Contact not found."
     else:
         return "Invalid command."
+    
+
+def show_all(contacts):
+    # Показує усі збережені контакти з номерами телефонів
+    for name, phone in contacts.items():
+        print(f"{name}: {phone}")
+
+
