@@ -25,3 +25,15 @@ def change_contact(args, contacts):
             return "Contact not found."
     else:
         return "Invalid command."
+    
+
+def show_phone(args, contacts):
+    # Показ номеру телефона для зазначеного контакту
+    if len(args) == 1:
+        name = args[0]
+        if name in contacts:
+            return contacts[name]
+        else:
+            return "Contact not found."
+    else:
+        return "Invalid command."
